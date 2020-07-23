@@ -35,6 +35,8 @@ Make sure you have ~~boost~~ log4cpp, libevdev and libusb-1.0 installed.
 Install [g13-git from AUR](https://aur.archlinux.org/packages/g13-git/)
 
 ### Building from source
+#### For Mint 20 ####
+* ***sudo apt install liblog4cpp5-dev libevdev-dev libusb-1.0-0-dev libgmock-dev***
 
 ```
 $ cd <sourcedir>
@@ -42,19 +44,6 @@ $ cmake -B build -S .
 $ cd build
 $ make
 ```
-
-## OLD DOCUMENTATION FOLLOWS
-
-### For Ubuntu (15.10)
-
-* ***sudo apt-get install libusb-1.0-0-dev***
-* ~~***sudo apt-get install libboost-all-dev***~~
-
-
-### Build
-Compile by running
-
-    make
 
 If you want to Run the daemon as user, put the file 91-g13.rules into /etc/udev/rules.d/ (or whatever directory your distribution uses).
 
